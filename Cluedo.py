@@ -1,5 +1,15 @@
-print('Cluedo Spel') #Kolonel van geelen en  Professor Pimpel
+print('Cluedo Spel') #Kolonel van geelen en  Professor Pimpel (Rosa Roodhart)
 Man = input('Bent u een man of een vrouw? ')
+Manv = Man == 'vrouw'
+if Manv == True:
+    actrice = input('Bent u een actrice of filmster? Of geweest? j/n ')
+    actricej = actrice == 'j'
+    if actricej == True:
+        actriceogen = input('Heeft u donkere kringen onder uw ogen? j/n ')
+else:
+    print('Je bent u niet de persoon die wij zoeken. Helaas!')
+    
+
 Leeftijd = int(input('Hoe oud bent u? '))
 Leeftijdk = Leeftijd >= 18
 Haar = input('Welke kleur haar heeft u? ')
@@ -23,3 +33,8 @@ if Haarz and Wapensj and Militairej == True:
     print('Je bent aangenomen voor de sollicatatie gesprek van Kolonel van geelen!')
 if Haarg and Brilj and archeoloogj == True:
     print('Je bent aangenomen voor de sollicatatie gesprek van  Professor Pimpel!')
+if Haarz and Haarg == False:
+    print('Je bent u niet de persoon die wij zoeken. Helaas!')
+if Wapensj and Militairej and Brilj and archeoloogj == False:
+    print('Je bent u niet de persoon die wij zoeken. Helaas!')
+if Manv and 
