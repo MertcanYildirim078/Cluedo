@@ -6,10 +6,14 @@ if Manv == True:
     actricej = actrice == 'j'
     if actricej == True:
         actriceogen = input('Heeft u donkere kringen onder uw ogen? j/n ')
-else:
-    print('Je bent u niet de persoon die wij zoeken. Helaas!')
-    
-
+        actriceogenj = actriceogen == 'j'
+        if actriceogenj == True:
+            rouwbeklag = input('Heeft u een fraai gespeelde rouwbeklag? j/n ')
+            rouwbeklagj = rouwbeklag == 'j'
+            if rouwbeklagj == True:
+                print('Je bent aangenomen voor de sollicatatie gesprek van Rosa Roodhart!')
+            else:
+                print('Helaas bent u niet de persoon die wij zoeken. Helaas!')
 Leeftijd = int(input('Hoe oud bent u? '))
 Leeftijdk = Leeftijd >= 18
 Haar = input('Welke kleur haar heeft u? ')
@@ -30,11 +34,11 @@ elif Man == 'vrouw':
 if Leeftijdk == False:
     print('Helaas bent u niet de persoon die wij zoeken. Helaas!')
 if Haarz and Wapensj and Militairej == True:
-    print('Je bent aangenomen voor de sollicatatie gesprek van Kolonel van geelen!')
+    print('Je bent aangenomen voor de sollicatatie gesprek van Kolonel van Geelen!')
 if Haarg and Brilj and archeoloogj == True:
     print('Je bent aangenomen voor de sollicatatie gesprek van  Professor Pimpel!')
 if Haarz and Haarg == False:
     print('Je bent u niet de persoon die wij zoeken. Helaas!')
 if Wapensj and Militairej and Brilj and archeoloogj == False:
     print('Je bent u niet de persoon die wij zoeken. Helaas!')
-if Manv and 
+
